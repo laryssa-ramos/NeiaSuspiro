@@ -127,11 +127,6 @@ html{
 
 @media(max-width: 640px){
 
-    .header{
-       background-color: var(--color-pink);
-    
-    }
-
     .header .nav{
       display: flex;
       flex-direction: column;
@@ -139,7 +134,7 @@ html{
       top: 100%;
       left: 0;
       right: 0;
-     padding-top: 2rem;
+      padding-top: 4rem;
       background-color: var(--color-pink);
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -160,8 +155,8 @@ html{
         display: initial;
         position: absolute;
         left: .1rem;
-        top: 50%;
-        padding: .5rem .9rem;
+        top: 20%;
+        padding: 1.5rem .9rem;
         font-size: 1.8rem;
       
     }
@@ -183,6 +178,12 @@ html{
 
     .header .logo img{
         height: 120px;
+    }
+
+
+    .header #menu-btn{
+        font-size: 1.5rem;
+      
     }
 
     .home .carousel{
