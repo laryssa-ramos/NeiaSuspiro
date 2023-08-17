@@ -209,6 +209,10 @@ section{
 
 @media(max-width: 640px){
 
+    .header{
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.256);
+    }
+
     .header .nav{
       display: flex;
       flex-direction: column;
@@ -237,6 +241,7 @@ section{
         display: initial;
         position: absolute;
         color: var(--color-brown);
+        top: 20%;
         left: .1rem;
         padding: 1.5rem .9rem;
         font-size: 1.8rem;
