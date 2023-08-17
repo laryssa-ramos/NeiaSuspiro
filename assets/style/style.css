@@ -138,7 +138,7 @@ section{
 
 .products{
     padding: 1rem;
-    background: var(--color-light-pink);
+    background: var(--color-white);
 }
 
 .products .box-container{
@@ -160,7 +160,6 @@ section{
     padding: 15px;
     cursor: pointer;
     text-align: center;
-    height: 22rem;
    
 }
 
@@ -172,7 +171,7 @@ section{
 
 .products .box-container .box .img img{
     width: 100%;
-    height: 200px;
+    height: 250px;
     border-radius: 8px;
     object-fit: cover;
     transition: all .1s linear;
@@ -238,7 +237,6 @@ section{
         position: absolute;
         color: var(--color-brown);
         left: .1rem;
-        top: 20%;
         padding: 1.5rem .9rem;
         font-size: 1.8rem;
       
