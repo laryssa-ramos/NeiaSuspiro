@@ -220,7 +220,6 @@ section{
       top: 100%;
       left: 0;
       right: 0;
-      padding-top: 4rem;
       background-color: var(--color-pink);
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -253,6 +252,10 @@ section{
         background: var(--color-pink);
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.256);
         
+    }
+
+    .scroll-padding-bottom{
+        margin-top: 3.8rem;
     }
     
     .home .carousel{

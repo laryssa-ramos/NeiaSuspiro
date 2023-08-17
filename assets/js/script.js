@@ -5,16 +5,19 @@ function scrollLogo(){
     const logo = document.getElementById('logo');
     const header = document.getElementById('header');
     const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('nav');
 
     if(this.scrollY >= 70){
         logo.classList.add('scroll-logo');
         header.classList.add('scroll-header');
         btn.classList.add('scroll-btn');
+        nav.classList.add('scroll-padding-bottom');
     }
     else{
         logo.classList.remove('scroll-logo');
         header.classList.remove('scroll-header');
         btn.classList.remove('scroll-btn');
+        nav.classList.remove('scroll-padding-bottom');
 
     }
 }
