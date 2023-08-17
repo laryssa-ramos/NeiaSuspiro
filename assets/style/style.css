@@ -248,7 +248,7 @@ section{
         color: var(--color-brown);
         font-size: 1.8rem;
         padding: .5rem;
-        border: .2rem solid var(--color-brown);
+        border: 2px solid var(--color-brown);
         border-radius: .2rem;
         
       
