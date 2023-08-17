@@ -287,29 +287,10 @@ section{
         height: 120px;
     }
 
-    .products .box-container{
-        padding: 0;  
-    }
-    
-    
-    .products .box-container .box .img img{
-       height: 200px;
-    }
-
+  
 }
 
-@media(max-width: 460px){
 
-    .products .box-container{
-       
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
-        
-    }
-    .products .box-container .box .img img{
-       height: 120px;
-    }
-
-}
 
 
 
