@@ -143,7 +143,7 @@ section{
 }
 
 .products .box-container{
-    max-width: 1000px;
+    max-width: 75rem;
     width: 100%;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
@@ -251,7 +251,8 @@ section{
     .scroll-btn{
         width: 100%;
         background: var(--color-pink);
-       border-bottom: 1px solid gray;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.256);
+        
     }
     
     .home .carousel{
