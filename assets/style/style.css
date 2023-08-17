@@ -1,7 +1,7 @@
 
 :root{
     --color-pink: rgb(241, 195, 220);
-    --color-light-pink: rgb(242, 225, 234);
+    --color-light-pink: rgb(255, 231, 244);
     --color-brown: rgb(115, 55, 55);
     --color-white: rgb(255, 247, 239);
 
@@ -33,7 +33,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin: 1.5rem;
     font-size: 2rem;
     color: var(--color-brown);
 }
@@ -91,6 +91,7 @@ section{
     color: var(--color-brown);
     background: var(--color-light-pink);
     border: 2px solid var(--color-brown);
+    border-radius: .2rem;
 }
 
 .header .nav a:hover{
@@ -120,14 +121,14 @@ section{
     overflow: hidden;
     display: flex;
     align-items: center;
-    width:50rem;
+    width:60rem;
     margin:15rem 0 4rem 0;
     border: 5px solid var(--color-white);
 }
 
 .home .container{
     display: flex;
-    transition: transform 0.5 ease-in-out;
+    transition: transform 0.5 linear;
     transform: translateX(0);
   }
 
@@ -137,7 +138,7 @@ section{
 
 .products{
     padding: 1rem;
-    background: var(--color-white);
+    background: var(--color-light-pink);
 }
 
 .products .box-container{
@@ -147,7 +148,7 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     margin: auto;
     gap: 20px; 
-    padding: 30px 9% 20px;
+    padding: 5px 9% 20px;
     
 }
 
@@ -159,6 +160,7 @@ section{
     padding: 15px;
     cursor: pointer;
     text-align: center;
+    height: 22rem;
    
 }
 
@@ -186,9 +188,12 @@ section{
 }
 
 .products .box-container .box .title{
-    
+    font-size: 1.35rem;
 }
 
+.products .box-container .box .price{
+   font-size: 1.25rem;
+}
 
 
 
@@ -231,6 +236,7 @@ section{
     .header #menu-btn{
         display: initial;
         position: absolute;
+        color: var(--color-brown);
         left: .1rem;
         top: 20%;
         padding: 1.5rem .9rem;
@@ -258,18 +264,16 @@ section{
 
 @media(max-width: 540px){
 
+    .h2{
+        font-size: 1.8rem;
+    }
+
     .header .logo img{
         height: 120px;
     }
 
-
-    .header #menu-btn{
-        font-size: 1.5rem;
-      
-    }
-
     .home .carousel{
-        margin-top: 8rem;
+        margin-top: 6.5rem;
      }
 
 }
