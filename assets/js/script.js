@@ -4,7 +4,7 @@ function scrollLogo(){
 
     const logo = document.getElementById('logo');
     const header = document.getElementById('header');
-    const btn = document.getElementById('menu-btn');
+    const btn = document.getElementById('nav-btn');
     const nav = document.getElementById('nav');
 
     if(this.scrollY >= 70){

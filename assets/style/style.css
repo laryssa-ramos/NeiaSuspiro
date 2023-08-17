@@ -236,14 +236,21 @@ section{
     
     }
 
+    .header .nav-btn{
+        position: absolute;
+        top: 20%;
+        left: .01rem;
+        padding: 1.5rem .9rem;
+    }
+
     .header #menu-btn{
         display: initial;
-        position: absolute;
         color: var(--color-brown);
-        top: 20%;
-        left: .1rem;
-        padding: 1.5rem .9rem;
         font-size: 1.8rem;
+        padding: .5rem;
+        border: 1px solid var(--color-brown);
+        border-radius: .2rem;
+        
       
     }
 
