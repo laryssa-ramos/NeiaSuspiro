@@ -45,8 +45,6 @@ section{
     margin: .5rem 0;
 }
 
-
-
 .header{
     position: fixed;
     top: 0;
@@ -143,12 +141,12 @@ section{
 }
 
 .products .box-container{
-    max-width: 75rem;
+    max-width: 70rem;
     width: 100%;
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); 
     margin: auto;
-    gap: 20px; 
+    gap: 40px; 
     padding: 5px 9% 20px;
     
 }
@@ -172,7 +170,7 @@ section{
 
 .products .box-container .box .img img{
     width: 100%;
-    height: 250px;
+    height: 180px;
     border-radius: 8px;
     object-fit: cover;
     transition: all .1s linear;
@@ -193,6 +191,7 @@ section{
 
 .products .box-container .box .price{
    font-size: 1.25rem;
+   display: none;
 }
 
 
@@ -289,6 +288,17 @@ section{
 
   
 }
+
+@media(max-width: 490px){
+
+    .products .box-container{
+        padding: 5px 15% 20px;
+        
+    }
+  
+}
+
+
 
 
 
