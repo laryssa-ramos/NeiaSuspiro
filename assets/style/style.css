@@ -141,7 +141,7 @@ section{
 }
 
 .products .box-container{
-    max-width: 70rem;
+    max-width: 65rem;
     width: 100%;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); 
