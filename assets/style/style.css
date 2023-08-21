@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 :root{
     --color-pink: rgb(241, 195, 220);
@@ -34,8 +35,9 @@ section{
     justify-content: center;
     align-items: center;
     margin: 1.5rem;
-    font-size: 2rem;
-    color: var(--color-brown);
+    font-family: 'Courgette', cursive;
+    font-size: 2.2rem;
+    color: var(--color-brown);   
 }
 
 .title{
@@ -44,6 +46,8 @@ section{
     color: var(--color-brown);
     margin: .5rem 0;
 }
+
+/* HEADER */
 
 .header{
     position: fixed;
@@ -109,6 +113,8 @@ section{
     box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
+/* HOME */
+
 .home{
     display: flex;
     align-items: center;
@@ -134,6 +140,8 @@ section{
 .home .container img{
     width: 100%;
 }
+
+/* PRODUCTS */
 
 .products{
     padding: 1rem;
@@ -194,6 +202,49 @@ section{
 }
 
 
+/* ABOUT */
+
+.about{
+   
+}
+
+.about .container{
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin:2.2rem auto auto auto;
+    padding: 2rem 4rem;
+    border: 2px solid var(--color-brown);
+    border-radius: .8rem;
+}
+
+.about .container .img {
+    width: 190px
+}
+
+.about .container .img img{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.429);
+}
+
+.about .container .img img:not(:first-child){
+    margin: -1.3rem 0 0 10rem;
+}
+
+.about .container .text{
+    max-width: 320px;
+}
+
+.about .container .text p{
+   font-size: 1.2rem;
+   text-align: center;
+}
 
 
 
@@ -202,7 +253,20 @@ section{
 
 
 
+@media(max-width:825px){
+    .about .container{
+        display: flex;
+        flex-direction: column;
+    }
 
+    .about .container .img {
+        width: 160px
+    }
+    
+    .about .container .img img{
+        height: 130px;
+    }
+}
 
 
 @media(max-width: 640px){
@@ -278,7 +342,7 @@ section{
 @media(max-width: 540px){
 
     .h2{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .header .logo img{
