@@ -36,7 +36,7 @@ section{
     align-items: center;
     margin: 1.5rem;
     font-family: 'Courgette', cursive;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: var(--color-brown);   
 }
 
@@ -348,7 +348,7 @@ section{
 @media(max-width: 540px){
 
     .h2{
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .header .logo img{
@@ -371,7 +371,7 @@ section{
     }
 
     .about .container{
-        width: 300px;
+        width: 95%;
     }
 
 
