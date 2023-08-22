@@ -238,7 +238,7 @@ section{
 }
 
 .about .container .text{
-    max-width: 320px;
+    width: 320px;
 }
 
 .about .container .text p{
@@ -257,14 +257,20 @@ section{
     .about .container{
         display: flex;
         flex-direction: column;
+        width: 500px;
     }
 
     .about .container .img {
+        margin: 0 0 1.5rem -10rem;
         width: 160px
     }
     
     .about .container .img img{
         height: 130px;
+    }
+
+    .about .container .text{
+        width: 100%;
     }
 }
 
@@ -349,6 +355,11 @@ section{
         height: 120px;
     }
 
+    .about .container{
+        width: 400px;
+        padding: 2rem 1rem;
+    }
+
   
 }
 
@@ -358,6 +369,25 @@ section{
         padding: 5px 15% 20px;
         
     }
+
+    .about .container{
+        width: 300px;
+    }
+
+
+    .about .container .img {
+        margin-left: -8rem;
+    }
+    
+
+    .about .container .img img{
+        height: 115px;
+    }
+
+    .about .container .img img:not(:first-child){
+        margin: -3.3rem 0 0 8rem;
+    }
+    
   
 }
 
