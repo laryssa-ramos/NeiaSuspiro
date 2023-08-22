@@ -387,6 +387,10 @@ section{
     .about .container .img img:not(:first-child){
         margin: -3.3rem 0 0 8rem;
     }
+
+    .about .container .text p {
+        font-size: 1rem;
+    }
     
   
 }
