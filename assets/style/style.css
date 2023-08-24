@@ -206,7 +206,7 @@ section{
 /* ABOUT */
 
 .about{
-   
+  padding-bottom: 3rem;
 }
 
 .about .container{
@@ -249,6 +249,33 @@ section{
    text-align: center;
 }
 
+.jobs{
+    background: var(--color-white);
+}
+
+.jobs .container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.jobs .image{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;  
+}
+
+.jobs  .container img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border-radius: .3rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.429);
+}
 
 
 
@@ -393,6 +420,12 @@ section{
 
     .about .container .text p {
         font-size: 1.15rem;
+    }
+    
+    .jobs  .container img{
+        height: 170px;
+        width: 170px;
+
     }
     
   
