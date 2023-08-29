@@ -284,7 +284,7 @@ section{
     align-items: center;
     justify-content: center;
     color: var(--color-brown);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transition: all .2s linear;
 }
 
@@ -311,6 +311,11 @@ section{
     display: flex;
     flex-direction: column;
     font-weight: 400;
+    transition: all .2s linear;
+}
+
+.info .contact > div:hover, .contact a:hover{
+    color: var(--color-brown);
 }
 
 .info .title_info{
