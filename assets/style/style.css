@@ -319,8 +319,8 @@ section{
     transition: all .2s linear;
 }
 
-.info span{
-    line-height: 1.2rem;
+.info span, .info i{
+    line-height: 2rem;
 }
 
 .info .contact > div:hover, .contact a:hover{
