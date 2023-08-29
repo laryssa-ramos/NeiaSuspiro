@@ -316,6 +316,7 @@ section{
     display: flex;
     flex-direction: column;
     font-weight: 400;
+    line-height: 1.3rem;
     transition: all .2s linear;
 }
 
@@ -335,11 +336,23 @@ section{
     align-items: center;
     font-size: .8rem;
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem;
     background: black;
     color: var(--color-white);
     
 }
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 35px;
+    right: 25px;
+    z-index: 9990;
+  }
+
+    .whatsapp-icon img{
+        width:50px;
+    }
+
 
 
 @media(max-width:825px){
