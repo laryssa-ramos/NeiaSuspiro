@@ -304,6 +304,11 @@ section{
     max-width: 500px;
     width: 100%;
 }
+
+.info i{
+   font-size: 1.2rem;
+}
+
 .info a:link, a:visited{
     color: black;
 }
