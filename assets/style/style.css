@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans:wght@400;500;600&display=swap');
 
 :root{
     --color-pink: rgb(241, 195, 220);
@@ -292,6 +292,44 @@ section{
    color: rgb(74, 14, 14);
 }
 
+
+/* FOOTER */
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+}
+.info a:link, a:visited{
+    color: black;
+}
+.info .payment, .contact{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.info .title_info{
+    font-size: 1.4rem;
+    margin-bottom: .7rem;
+    font-weight: bold;
+}
+
+.site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: black;
+    color: var(--color-white);
+    
+}
 
 
 @media(max-width:825px){
