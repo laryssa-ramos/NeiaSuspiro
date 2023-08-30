@@ -290,6 +290,7 @@ section{
 
 .jobs a:hover{
    color: rgb(74, 14, 14);
+   font-weight: bold;
 }
 
 
