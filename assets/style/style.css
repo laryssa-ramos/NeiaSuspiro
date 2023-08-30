@@ -305,7 +305,13 @@ section{
     width: 100%;
 }
 
+.info .payment > div, .contact > div{
+    display: flex;
+    align-items: center;
+}
+
 .info i{
+   margin-right: .5rem;
    font-size: 1.2rem;
 }
 
@@ -345,10 +351,12 @@ section{
     
 }
 
+/* ICON WHATSAPP */
+
 .whatsapp-icon {
     position: fixed;
-    bottom: 35px;
-    right: 25px;
+    bottom: 40px;
+    right: 20px;
     z-index: 9990;
   }
 
