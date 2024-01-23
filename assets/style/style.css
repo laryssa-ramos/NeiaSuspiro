@@ -200,6 +200,7 @@ section{
 
 .products .box-container .box .price{
    font-size: 1.2rem;
+   display: none;
 }
 
 
@@ -327,7 +328,7 @@ section{
 }
 
 .info span, .info i{
-    line-height: 2rem;
+    line-height: 1.5rem;
 }
 
 .info .contact > div:hover, .contact a:hover{
