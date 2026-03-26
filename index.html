@@ -1,261 +1,383 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/image/icons/favicon.ico" type="image/x-icon">
-    <title>Neia Suspiros</title>
-    <link rel="stylesheet" href="assets/style/style.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="assets/js/script.js" defer></script>
-  </head>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neia Suspiros — Doces Artesanais</title>
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
 
-  <body>
+</head>
+<body>
 
-    <!-- HEADER -->
-    <header id="header" class="header">
-      <div class="logo">
-        <img id="logo" src="assets/image/icons/logo1.png" alt="" />
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#home" class="logo">Neia <span>Suspiros</span></a>
+    <nav class="nav" id="nav">
+      <a href="#home">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contato" class="nav-btn">Contato</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hero-eyebrow fade-up visible">Doces Artesanais</p>
+      <h1 class="hero-title fade-up visible" style="animation-delay:.1s">
+        Suspiros que<br><em>encantam</em> cada<br>ocasião especial
+      </h1>
+      <p class="hero-desc fade-up visible" style="animation-delay:.2s">
+        Criações artesanais feitas com carinho, sabor e delicadeza para tornar seus momentos verdadeiramente inesquecíveis.
+      </p>
+      <div class="hero-actions fade-up visible" style="animation-delay:.3s">
+        <a href="#produtos" class="btn btn-primary">Ver Produtos</a>
+        <a href="#contato" class="btn btn-outline">Fazer Pedido</a>
       </div>
-
-      <nav id="nav" class="nav">
-        <a href="#home">Página Inicial</a>
-        <a href="#products">Produtos</a>
-        <a href="#about">Sobre</a>
-        <a href="#jobs">Trabalhos</a>
-      </nav>
-      <div id="nav-btn" class="nav-btn">
-        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+    <div class="hero-gallery">
+      <div class="hero-grid" id="heroGrid">
+        <div class="hero-grid-item"><img src="images/home/home1.jpg" alt="Suspiros artesanais" loading="eager" /></div>
+        <div class="hero-grid-item"><img src="images/home/home2.jpg" alt="Doces delicados" loading="eager" /></div>
+        <div class="hero-grid-item"><img src="images/home/home3.jpg" alt="Pirulitos de cristal" loading="eager" /></div>
       </div>
-    </header>
-
-    <!-- HOME -->
-
-    <section id="home" class="home">
-      <div class="carousel">
-        <div id="img" class="container">
-          <img src="assets/image/home/home1.jpg" alt="suspiros" />
-          <img src="assets/image/home/home2.jpg" alt="suspiros" />
-          <img src="assets/image/home/home4.jpg" alt="suspiros" />
-        </div>
+      <div class="carousel-dots" id="carouselDots">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PRODUCTS -->
-
-    <section id="products" class="products">
-      <h2 class="h2">Produtos</h2>
-
-      <div class="box-container">
-        <div class="box">
-          <div class="img">
-            <img src="assets/image/gallery/mini-suspiros.png" alt="mini suspiros" />
-          </div>
-          <span class="title">Mini Suspiros</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img src="assets/image/gallery/suspirulitos.png" alt="suspirulitos" />
-          </div>
-          <span class="title">Suspirulitos</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img src="assets/image/gallery/mini-suspirulitos.png" alt="mini suspirulitos" />
-          </div>
-          <span class="title">Mini Suspirulitos</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img src="assets/image/gallery/roseta-de-suspiro.png" alt="roseta de suspiro" />
-          </div>
-          <span class="title">Roseta de Suspiro</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img src="assets/image/gallery/cone-de-suspiro.jpg" alt="cone de suspiro" />
-          </div>
-          <span class="title">Cone de Suspiro</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img src="assets/image/gallery/centro-de-mesa.png" alt="centro de mesa" />
-          </div>
-          <span class="title">Centro de Mesa</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img src="assets/image/gallery/casadinho-de-suspiro.png" alt="casadinho de suspiro" />
-          </div>
-          <span class="title">Casadinho de Suspiro</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img src="assets/image/gallery/torre-de-suspiro.png" alt="torre de suspiro" />
-          </div>
-          <span class="title">Torre de Suspiro</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img src="assets/image/gallery/pirulito-de-cristal-tematico.png" alt="pirulito de cristal temático"/>
-          </div>
-          <span class="title">Pirulito de Cristal Temático</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img
-              src="assets/image/gallery/pirulito-de-cristal-do-mickey.png"
-              alt="pirulito de cristal do Mickey"
-            />
-          </div>
-          <span class="title">Pirulito de Cristal do Mickey e da Minnie</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <div class="box">
-          <div class="img">
-            <img
-              src="assets/image/gallery/pirulito-de-cristal-com-especiarias.png"
-              alt="pirulito de cristal com especiarias"
-            />
-          </div>
-          <span class="title">Pirulito de Cristal com Especiarias</span>
-          <span class="price">R$9,99</span>
-        </div>
-
-        <!-- <div class="box">
-          <div class="img">
-            <img
-              src="assets/image/gallery/pirulito-de-cristal-personalizado.png"
-              alt=""
-            />
-          </div>
-          <span class="title">Pirulito de Cristal Personalizado</span>
-          <span class="price">R$9,99</span>
-        </div> -->
-
-        <div class="box">
-          <div class="img">
-            <img
-              src="assets/image/gallery/pirulito-de-cristal-sereia.png"
-              alt="pirulito de cristal Sereia"
-            />
-          </div>
-          <span class="title">Pirulito de Cristal Sereia</span>
-          <span class="price">R$9,99</span>
-        </div>
+  <!-- Products -->
+  <section class="section products" id="produtos">
+    <div class="products-header">
+      <div>
+        <p class="section-label">Cardápio</p>
+        <h2 class="section-title">Nossas <em>criações</em> artesanais</h2>
       </div>
-    </section>
-
-    <!-- ABOUT-->
-
-    <section class="section about" id="about">
-      <h2 class="h2">Sobre</h2>
-
-      <div class="container">
-        <div class="img">
-          <img src="assets/image/about/suspiros.png" alt="" />
-          <img src="assets/image/about/pirulito.png" alt="">
-        </div>
-
-        <div class="text">
-          <p>Na Neia Suspiros, criamos doçuras artesanais que encantam! Nossos suspiros e pirulitos de cristal são cuidadosamente feitos à mão, trazendo sabores e designs únicos para cada ocasião. Cada mordida é um pedacinho de amor e dedicação, transformando momentos simples em lembranças doces e especiais. Aprecie nosso catálogo e faça já sua encomenda!</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- JOBS -->
-
-    <section id="jobs" class="jobs">
-        <h2 class="h2">Trabalhos</h2>
-      <div class="container">
-        <div class="image">
-          <img src="assets/image/jobs/image1.png" alt="lembrancinha dia das mães">
-          <img src="assets/image/jobs/image2.png" alt="suspiros">
-          <img src="assets/image/jobs/image3.png" alt="roseta de suspiro">
-          <img src="assets/image/jobs/image4.png" alt="lembrancinha mini suspiros">
-          <img src="assets/image/jobs/image5.png" alt="roseta de suspiro atlético mineiro">
-          <img src="assets/image/jobs/image6.png" alt="topo de bolo">
-          <img src="assets/image/jobs/image7.png" alt="suspirulito do mickey">
-          <img src="assets/image/jobs/image8.png" alt="cone de suspiro">
-          <img src="assets/image/jobs/image9.png" alt="suspirulito">
-          <img src="assets/image/jobs/image10.jpg" alt="mini suspiros">
-          <img src="assets/image/jobs/image11.png" alt="pirulito de cristal">
-          <img src="assets/image/jobs/image12.png" alt="pirulito de cristal de especiarias">
-        </div>
-      </div>
-    <a href="https://www.instagram.com/neia_suspiros/" target="_blank"> <i class='bx bxl-instagram-alt' style="font-size: 1.5rem;"></i>neia_suspiros</a>
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer>
-      <div class="info">
-        <div class="payment">
-          <span class="title_info">Pagamento</span>
-          <div class="money">
-            <i class='bx bx-money'></i></box-icon>
-            <span>Dinheiro</span>
-          </div>
-          <div class="pix">
-            <img style="height: 15px; margin-right: .5rem;" src="assets/image/icons/pix.png" alt="">
-            <span>Pix</span>
-          </div>
-          <div class="card">
-            <i class='bx bx-credit-card'></i>
-            <span>Cartão</span>
-          </div>
-        </div>
-
-        <div class="contact">
-          <span class="title_info">Contato</span>
-            <div class="phone">
-              <i class='bx bxs-phone'></i>
-              <a href="tel:38998085384">38 9 9808-5384</a>
-            </div>
-            <div class="email">
-              <i class='bx bxs-envelope'></i>
-              <a href="mailto:neiasuspiros@gmail.com" target="_blank">neiasuspiros@gmail.com</a>
-            </div>
-            <div class="instagram">
-              <i class='bx bxl-instagram-alt'></i>
-              <a href="https://www.instagram.com/neia_suspiros/" target="_blank">neia_suspiros</a>
-            </div>
-        </div>
-      </div>
-      <div class="site">
-        <span>&copy;2023. Neia Suspiros | Design by <strong> Laryssa Ramos</strong></span>
-      </div>
-    </footer>
-
-    <div class="whatsapp-icon">   
-      <a href="https://api.whatsapp.com/send?phone=5538998085384" target="_blank"><img src="assets/image/icons/whatsapp.svg" alt=""></a>
+      <a href="#contato" class="btn btn-outline">Encomendar agora</a>
     </div>
 
-  </body>
+    <div class="products-grid">
+
+      <!-- Suspiros -->
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/mini-suspiros.png" alt="Mini Suspiros" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Mini Suspiros</p>
+          
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/suspirulitos.png" alt="Suspirulitos" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Suspirulitos</p>
+          
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/mini-suspirulitos.png" alt="Mini Suspirulitos" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Mini Suspirulitos</p>
+          
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/roseta-de-suspiro.png" alt="Roseta de Suspiro" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Roseta de Suspiro</p>
+          
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/cone-de-suspiro.jpg" alt="Cone de Suspiro" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Cone de Suspiro</p>
+          
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/casadinho-de-suspiro.png" alt="Casadinho de Suspiro" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Casadinho de Suspiro</p>
+          
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/centro-de-mesa.png" alt="Centro de Mesa" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Centro de Mesa</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/torre-de-suspiro.png" alt="Torre de Suspiro" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Torre de Suspiro</p>
+        </div>
+      </div>
+
+      <!-- Pirulitos de Cristal -->
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/pirulito-de-cristal-personalizado.png" alt="Pirulito de Cristal Personalizado" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Pirulito Personalizado</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/pirulito-de-cristal-tematico.png" alt="Pirulito de Cristal Temático" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Pirulito Temático</p>
+          
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/pirulito-de-cristal-do-mickey.png" alt="Pirulito Mickey e Minnie" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Pirulito Mickey &amp; Minnie</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/pirulito-de-cristal-sereia.png" alt="Pirulito Sereia" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Pirulito Sereia</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-img">
+          <img src="images/gallery/pirulito-de-cristal-com-especiarias.png" alt="Pirulito com Especiarias" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <p class="product-name">Pirulito com Especiarias</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="sobre">
+    <div class="about-images">
+      <div class="about-images-grid">
+        <div class="about-img-wrap">
+          <img src="images/about/suspiros.png" alt="Suspiros artesanais" loading="lazy" />
+        </div>
+        <div class="about-img-wrap">
+          <img src="images/about/pirulito.png" alt="Pirulitos de cristal" loading="lazy" />
+        </div>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="section-label">Sobre nós</p>
+      <h2 class="section-title">Feitos com <em>amor</em> e dedicação</h2>
+      <p class="about-desc">
+        Cada suspiro e pirulito de cristal é criado artesanalmente, combinando técnica e carinho para que cada detalhe seja perfeito. Nossa missão é transformar momentos especiais em memórias doces e inesquecíveis.
+      </p>
+      <div class="about-features">
+        <p class="about-feat">100% artesanal, feito com ingredientes selecionados</p>
+        <p class="about-feat">Designs personalizados para cada ocasião</p>
+        <p class="about-feat">Embalagens delicadas e presenteáveis</p>
+        <p class="about-feat">Disponível para encomendas e eventos</p>
+      </div>
+      <a href="#contato" class="btn btn-primary" style="width:fit-content">Fazer um pedido</a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section portfolio" id="portfolio">
+    <div class="portfolio-header">
+      <p class="section-label">Galeria</p>
+      <h2 class="section-title">Nossas <em>criações</em> especiais</h2>
+      <div class="divider" style="margin-top:1.5rem"></div>
+    </div>
+    <div class="masonry">
+      <div class="masonry-item"><img src="images/jobs/image1.png"  alt="Criação especial 1"  loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image2.png"  alt="Criação especial 2"  loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image3.png"  alt="Criação especial 3"  loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image4.png"  alt="Criação especial 4"  loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image5.png"  alt="Criação especial 5"  loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image6.png"  alt="Criação especial 6"  loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image7.png"  alt="Criação especial 7"  loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image8.png"  alt="Criação especial 8"  loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image9.png"  alt="Criação especial 9"  loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image10.jpg" alt="Criação especial 10" loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image11.png" alt="Criação especial 11" loading="lazy" /></div>
+      <div class="masonry-item"><img src="images/jobs/image12.png" alt="Criação especial 12" loading="lazy" /></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contato">
+    <p class="section-label">Contato</p>
+    <h2 class="section-title" style="text-align:center">Vamos criar algo <em>especial</em> juntas?</h2>
+    <p style="color:var(--text-soft);max-width:44ch;font-size:.95rem;line-height:1.8;text-align:center">
+      Entre em contato pelo WhatsApp ou redes sociais para encomendar seus doces personalizados.
+    </p>
+
+    <div class="contact-cards">
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.74 12 19.79 19.79 0 0 1 1.68 3.4 2 2 0 0 1 3.66 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.76 16v.92z"/></svg>
+        </div>
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/5538998085384" target="_blank" rel="noopener">(38) 9 9808-5384</a></p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <h3>Instagram</h3>
+        <p><a href="https://instagram.com/neia_suspiros" target="_blank" rel="noopener">@neia_suspiros</a></p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>E-mail</h3>
+        <p><a href="mailto:neiasuspiros@gmail.com">neiasuspiros@gmail.com</a></p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <h3>Pagamentos</h3>
+        <div class="payment-badges">
+          <span class="badge">Dinheiro</span>
+          <span class="badge">Pix</span>
+          <span class="badge">Cartão</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2023 Neia Suspiros — Todos os direitos reservados &nbsp;·&nbsp; Design por <a href="#" target="_blank">Laryssa Ramos</a></p>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a class="whatsapp-float" href="https://wa.me/5538998085384" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <img src="images/icons/whatsapp.svg" alt="WhatsApp" />
+  </a>
+
+  <script>
+    // Header shadow on scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // Mobile menu
+    const toggle = document.getElementById('menuToggle');
+    const nav    = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      nav.classList.toggle('open');
+    });
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.classList.remove('active');
+        nav.classList.remove('open');
+      });
+    });
+
+    // Hero Carousel (mobile only)
+    const heroGrid  = document.getElementById('heroGrid');
+    const dots      = document.querySelectorAll('#carouselDots .dot');
+    const SLIDES    = 3;
+    let current     = 0;
+    let autoTimer   = null;
+    let touchStartX = 0;
+
+    function goTo(index) {
+      current = (index + SLIDES) % SLIDES;
+      heroGrid.style.transform = `translateX(-${current * (100 / SLIDES)}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    function startAuto() {
+      stopAuto();
+      autoTimer = setInterval(() => goTo(current + 1), 3500);
+    }
+    function stopAuto() { clearInterval(autoTimer); }
+
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); startAuto(); }));
+
+    heroGrid.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; stopAuto(); }, { passive: true });
+    heroGrid.addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+      startAuto();
+    }, { passive: true });
+
+    // Só ativa em mobile
+    const mq = window.matchMedia('(max-width: 900px)');
+    function handleMQ(e) { if (e.matches) { goTo(0); startAuto(); } else { stopAuto(); heroGrid.style.transform = ''; } }
+    mq.addEventListener('change', handleMQ);
+    handleMQ(mq);
+
+    // Fade-up on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.product-card, .masonry-item').forEach(el => {
+      el.classList.add('fade-up');
+      observer.observe(el);
+    });
+  </script>
+</body>
 </html>
